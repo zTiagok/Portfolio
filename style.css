@@ -1,5 +1,119 @@
+/* TAGS */
+body
+{
+
+    margin: 0px;
+    background-color: rgb(28, 26, 31);
+}
+
+/* CLASSES */
+.void
+{
+    position: relative;
+    margin-top:500px;
+    z-index: 2;
+}
+
 .everything
 {
+    
+    position: relative;
+    top: -20px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    width: 1000px;
+    margin: auto;
+    background-color: rgb(81, 75, 90);
+    padding: 10px 10px;
+    /* MUDAR A FONTE? */
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 16px;
+    z-index: 2;
+}
+
+.profile-background
+{
+
+    position: relative;
+    background-color: aqua;
+    width: 1020px;
+    margin-left: -10px;
+    height: 200px;
+
+    top:-10px;
 
     
 }
+
+.profile-picture
+{
+    position: absolute;
+    border-radius: 15px;
+    top: 7px;
+    right: 1020px;
+    z-index: 2;
+    width: 200px;
+    
+}
+
+.profile-line
+{
+    
+    width: 400px;
+    height: 1px;
+    background-color: white;
+    margin-left: 6px;
+    margin-top: -10px;
+}
+
+.profile-header
+{
+
+    position: relative;
+    left: 220px;
+    top: -32px;
+    z-index: 2;
+
+    
+}
+
+.profile-header h1
+{
+
+    font-size: 40px;
+    margin-bottom: -15px;
+    padding-top: 2px;
+    color: white;
+    text-shadow: 3px 3px 10px black;
+}
+
+.profile-header h2
+{
+
+    text-indent: 5px;
+    color: rgb(184, 184, 184);
+    text-shadow: 3px 3px 10px black;
+}
+
+.about-me
+{
+
+    position: relative;
+    width: 450px;
+
+    left: 225px;
+    bottom: 40px;
+}
+
+.justify
+{
+
+    text-align: justify;
+}
+
+.emphasis
+{
+    color: white;
+}
+
+/* IDS */

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css">
+    <<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 </head>
 
 
@@ -15,21 +18,34 @@
 <body>
     <div class="everything">
 
+        <!-- MENU SUSPENSO -->
+
         <!-- PERFIL -->
-        <img src="https://avatars.githubusercontent.com/u/102389848?v=4" alt="profile-picture" width="250px">
-        <h1> TIAGO BRAGA COSTA </h1>
-        <h2> Estudante de Desenvolvimento Web | Trybe </h2>
 
-
-        <!-- SOBRE -->
-        <h3> SOBRE </h3>
+        <div class="profile-background">
+            <div class="profile-header">
+                <img class="profile-picture" src="https://avatars.githubusercontent.com/u/102389848?v=4" alt="profile-picture">
+                
+                    <h1> TIAGO BRAGA COSTA </h1>
+                    <h2> Estudante de Desenvolvimento Web | Trybe </h2>
+            
+                    <hr class="profile-line">
+            </div>
         
-        <p> Sou um estudante que tem uma paixão por tecnologia, amo trabalhar com desenvolvimento e adoro codar
-        codar minhas ideias e códigos para o funcionamento de uma interação digital para todo o globo. <br>
-        Sou natural do Rio de Janeiro, Petrópolis e atualmente tenho 20 anos. <br>
-        Minhas línguas são Português Nativo e Inglês Americano Avançado. </p> 
 
+            <div class="about-me">
+                <p class="justify"> Sou um estudante que tem uma <span class="emphasis"> paixão por tecnologia</span>, <span class="emphasis">amo trabalhar com desenvolvimento</span> e <span class="emphasis"> adoro codar
+                minhas ideias </span>  para o funcionamento de uma interação digital para todo o globo. </p>
+                <p> Sou natural do <span class="emphasis">Rio de Janeiro</span>,<span class="emphasis"> Petrópolis</span> e atualmente tenho <span class="emphasis">20 anos</span>. <br>
+                Minhas línguas são <span class="emphasis">Português Nativo</span> e <span class="emphasis">Inglês Americano Avançado</span>. </p> 
+                
+        
 
+            </div>
+        </div>
+
+        <div class="void"> </div>
+        
         <!-- HISTÓRIA / ADICIONAR MAIS CONTEÚDO AQUI! -->
         <h3> MINHA HISTÓRIA </h3>
 
@@ -72,7 +88,6 @@
             Operador Logístico <br>
             Set de 2021 - Mar de 2022
         </ul>
-
 
 
         <!-- HABILIDADES -->
