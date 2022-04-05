@@ -3,6 +3,13 @@ body
 
     height: 1000px;
     margin: 0;
+    overflow-y: auto;
+    overflow-x:hidden;
+    background-image: url(/Imagens/wallpaper.gif);
+    background-color: rgb(34, 32, 36);
+    background-size: cover;
+    background-position: center;
+    
 }
 
 .background::before 
@@ -10,18 +17,111 @@ body
 
     position: fixed;
     background-size:cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-position: center;
+    
     content:"";
     height: 1350px;
     width: 100%;
-    top: -300px;
+    top: -10px;
     left: auto;
-    /* BOTAR UM WALLPAPER ANIMADO .GIF */
-    background-image: url(/Imagens/wallpaper.png);
-    filter: blur(4px);
-    z-index: 3;
+    background-image: url(/Imagens/wallpaper.gif);
+    filter: blur(3px);
+    z-index: 1;
+    
     
 }
+
+.lateral-bar
+{
+
+    position: fixed;
+    width: 200px;
+    height: 100px;
+    left:-175px;
+    top: 45%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(47, 44, 49);;
+    border: 3px solid rgb(127, 119, 133);;
+    box-shadow: 3px 3px 10px black;
+    z-index: 3;
+    transition-property: left, color;
+    transition-delay: 0s, 0s;
+    transition-duration: .7s, .5s;
+    color: transparent;
+}
+
+.lateral-bar:hover
+{
+    left: -5px;
+    transition-property: left,color;
+    transition-delay: 0s,.1s;
+    transition-duration: .5s,1s;
+    color: white;
+}
+
+.lateral-arrow
+{
+
+    position: relative;
+    background-image: url(/Imagens/Icons/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: right;
+    width: 36px;
+    height: 100px;
+    left: -2px;
+    top: -2px;
+    padding-left: 170px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition-property: transform;
+    transition-delay: 0s;
+    transition-duration: .5s;
+    z-index: 3;
+    
+
+}
+
+.lateral-arrow:hover
+{
+
+    transform:rotate(180deg);
+    transition-property: transform;
+    transition-delay: 0s;
+    transition-duration: .5s;
+}
+
+.lateral-heart
+{
+
+    position: relative;
+    background-image: url(/Imagens/Icons/heart.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    top: -67px;
+    left: 40px;
+}
+
+.lateral-text
+{
+
+    position: relative;
+    top: -137px;
+    left: 90px;
+    width: 100px;
+    text-align: center;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    
+
+
+}
+
 .everything
 {
 
@@ -32,9 +132,9 @@ body
     padding-left: 10px;
     height: 100%;
     background-color: rgb(47, 42, 51);
-    z-index: 10;
     font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-shadow: 0px 0px 20px 5px rgb(0, 0, 0);
+    z-index: 2;
 
 }
 
@@ -47,7 +147,8 @@ body
     top: 10px;
     width: 250px;
     border-radius: 15px;
-    box-shadow: 2px 2px 10px black;
+    border: 3px solid rgb(127, 119, 133);;;
+    box-shadow: 0px px 10px black;
     
 }
 
@@ -63,6 +164,8 @@ body
     font-size: 50px;
     color:white;
     text-shadow: 5px 5px 5px black;
+    
+    
     
 }
 
@@ -101,12 +204,14 @@ body
     left: 270px;
     width: 510px;
     height: fit-content;
+    color: rgb(167, 167, 167);
 }
 
-!!!.about-me span
+.about-me span
 {
 
     color: white;
+    font-weight: bolder;
 }
 
 .about-me p
@@ -118,42 +223,157 @@ body
 .social-networks 
 {
 
-   
     position: relative;
-    top: -50px;
-    left: -7px;
+    top: -45px;
+    left: -5px;
     width: 250px;
 }
 
-.social-networks img
+.instagram
 {
 
+    position: relative;
+    display: inline-block;
+    height: 32px;
     width: 32px;
-    margin-left: 15px;
+    top:0px;
+    background-image: url(/Imagens/Icons/instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 25px;
+    transition-property: top, background-image;
+    transition-delay: 0s, 0.3s;
+    transition-duration: .5s, 0.5s;
 }
 
-.social-networks img:hover
+.instagram:hover
+{
+    position: relative;
+    top: -3px;
+    background-image: url(/Imagens/Icons/instagram2.png);
+    cursor: pointer;
+    transition-property: top, background-image;
+    transition-delay: 0.0s, 0.1s;
+    transition-duration: 0.2s, 0.5s;
+}
+
+.linkedin
 {
 
     position: relative;
-    top: -1px;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    top:0px;
+    background-image: url(/Imagens/Icons/linkedin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+    transition-property: top, background-image;
+    transition-delay: 0s, 0.3s;
+    transition-duration: .5s, 0.5s;
+    
 }
 
-.social-networks a
+.linkedin:hover
 {
- 
     position: relative;
+    top: -3px;
+    background-image: url(/Imagens/Icons/linkedin2.png);
+    cursor: pointer;
+    transition-property: top, background-image;
+    transition-delay: 0.0s, 0.1s;
+    transition-duration: 0.2s, 0.5s;
+
 }
 
-.mail
+.github
 {
 
-    object-position: 0px 6px;
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    top:0px;
+    background-image: url(/Imagens/Icons/github.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+    transition-property: top, background-image;
+    transition-delay: 0s, 0.3s;
+    transition-duration: .5s, 0.5s;
+}
+
+.github:hover
+{
+    position: relative;
+    top: -3px;
+    background-image: url(/Imagens/Icons/github2.png);
+    cursor: pointer;
+    transition-property: top, background-image;
+    transition-delay: 0.0s, 0.1s;
+    transition-duration: 0.2s, 0.5s;
+}
+
+.whatsapp
+{
+
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    top:0px;
+    background-image: url(/Imagens/Icons/whatsapp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+    transition-property: top, background-image;
+    transition-delay: 0s, 0.3s;
+    transition-duration: .5s, 0.5s;
+}
+
+.whatsapp:hover
+{
+    position: relative;
+    top: -3px;
+    background-image: url(/Imagens/Icons/whatsapp2.png);
+    cursor: pointer;
+    transition-property: top, background-image;
+    transition-delay: 0.0s, 0.1s;
+    transition-duration: 0.2s, 0.5s;
+}
+
+.email
+{
+
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    top:0px;
+    background-image: url(/Imagens/Icons/email.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 6px;
+    margin-left: 10px;
+    transition-property: top, background-image;
+    transition-delay: 0s, 0.3s;
+    transition-duration: .5s, 0.5s;
+}
+
+.email:hover
+{
+    position: relative;
+    top: -3px;
+    background-image: url(/Imagens/Icons/email2.png);
+    cursor: pointer;
+    transition-property: top, background-image;
+    transition-delay: 0.0s, 0.1s;
+    transition-duration: 0.2s, 0.5s;
 }
 
 .profile
 {
-
     position: relative;
     
     margin-left: -10px;
@@ -162,5 +382,262 @@ body
     background-color: rgb(25, 23, 27);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    box-shadow: 0 4px 20px -2px black;
+    box-shadow: 0 7px 20px 0px black;
 }
+
+.history
+{
+    
+    
+    position: relative;
+    width: 900px;
+    left: -10px;
+    padding-left: 5px;
+}
+
+
+.history p:hover a:hover
+{
+
+    cursor: text;
+}
+
+h3
+{
+    
+    text-align: center;
+    color: white;
+    text-shadow: 0px 4px 2px black;
+    
+}
+
+
+.history p
+{
+
+    
+    text-align: center;
+    color: rgb(190, 178, 201);
+}
+
+.history a
+{
+
+    color: rgb(190, 178, 201);
+    text-decoration: solid;
+}
+
+.experiences
+{
+
+    position: relative;
+    display: inline-block;
+    left: -10px;
+    width: 100%;
+    height: 250px;
+    color: rgb(199, 199, 199);
+    user-select: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -ms-user-select:none;
+}
+}
+
+.experiences i
+{
+
+    font-size: 13px;
+}
+
+.experience1
+{
+    /* PREPARA CURSOS */
+    position: relative;
+    display: inline-block;
+    width: 270px;
+    background-color: rgb(25, 23, 27);
+    padding: 5px;
+    height: 142px;
+    top: -25px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 20px black;
+    margin-left: 20px;
+    background-image: url(/Imagens/prepara.png);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: -10px;
+    color:transparent;
+    transition-property: top, background-image, color;
+    transition-delay: 0s, 0s, 0.1s;
+    transition-duration: 0.5s, 0.5s, 0.2s;
+}
+
+.experience1:hover
+{
+
+    top: -30px;
+    cursor:default;
+    background-color: rgb(25, 23, 27);
+    background-image: url(/Imagens/prepara2.png);
+    color: white;
+    transition-property: top, background-image, color;
+    transition-delay: 0s, 0s, 0.2s;
+    transition-duration: 0.2s, 0.5s, 0.2s;
+}
+
+.experience2
+{
+    /* CURSO CONNECTIONS */
+    position: relative;
+    display: inline-block;
+    width: 270px;
+    height: 142px;
+    padding: 5px;
+    top: -25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-image: url(/Imagens/connections.png);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: -10px;
+    box-shadow: 0px 10px 20px black;
+    color:transparent;
+    transition-property: top, background-image, color;
+    transition-delay: 0s, 0s, 0.1s;
+    transition-duration: 0.5s, 0.5s, 0.2s;
+}
+
+.experience2:hover
+{
+
+    top: -30px;
+    cursor:default;
+    background-color: rgb(25, 23, 27);
+    background-image: url(/Imagens/connections2.png);
+    color: white;
+    transition-property: top, background-image, color;
+    transition-delay: 0s, 0s, 0.2s;
+    transition-duration: 0.2s, 0.5s, 0.2s;
+}
+
+.experience3
+{
+    /* GRUPO PETRÓPOLIS */
+    position: relative;
+    display: inline-block;
+    width: 270px;
+    height: 142px;
+    padding: 5px;
+    top: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 20px black;
+    background-image: url(/Imagens/gp.png);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: -10px;
+    color:transparent;
+    transition-property: top, background-image, color;
+    transition-delay: 0s, 0s, 0.1s;
+    transition-duration: 0.5s, 0.5s, 0.2s;
+}
+
+
+.experience3:hover
+{
+    
+    top: 7px;
+    cursor:default;
+    background-color: rgb(25, 23, 27);
+    background-image: url(/Imagens/gp2.png);
+    color: white;
+    transition-property: top, background-image, color;
+    transition-delay: 0s, 0s, 0.2s;
+    transition-duration: 0.2s, 0.5s, 0.2s;
+}
+
+.abilities
+{
+
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    left: -10px;
+    width: 905px;
+    padding-bottom: 40px;
+    user-select: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -ms-user-select:none;
+}
+
+.abilities li
+{
+
+    position: relative;
+    font-weight: initial;
+    display: inline-block;
+    background-image: linear-gradient(rgb(116, 116, 116), rgb(71, 68, 73));
+    /* rgb(123, 118, 126); */
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    cursor:default;
+    box-shadow: 1px 1px 5px black;
+    transition-property: font-weight, text-shadow;
+    transition-delay: 1s, 1s;
+    transition-duration: .2s, .5s;
+}
+
+.abilities li:hover
+{
+
+    position: relative;
+    font-weight: bold;
+    transition-property: font-weight, text-shadow;
+    transition-delay: 0s, 0s;
+    transition-duration: .2s, .5s;
+    text-shadow: .5px .5px 5px white;
+}
+
+.placeholder-group
+{
+
+    padding-left: 115px;
+    padding-bottom: 100px;
+}
+
+.placeholder
+{
+
+    position: relative;
+    display: inline-block;
+    background-image: url(/Imagens/placeholder.png);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: -30px -25px;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    filter: blur(3px) brightness(40%);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 15px black;
+    transition-property: filter;
+    transition-delay: .5s;
+    transition-duration: 0.5s;
+
+}
+
+.placeholder:hover
+{
+
+    filter: blur(0px);
+    transition-property: filter;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+}
+
+
